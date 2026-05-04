@@ -1,0 +1,172 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #667eea, orange);
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #667eea;
+}
+
+/* Sections */
+section {
+    padding: 50px 10%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+
+
+article {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+article:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+form {
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007b80;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #00adb5;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* 🔥 Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #portfolio {
+        grid-template-columns: 1fr; /* stack */
+    }
+
+    section {
+        padding: 30px 5%;
+    }
+}
+.image2{
+    width: 70%;
+}
+.image1{
+    width: 70%;
+}
+#about:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    
+}
+#home:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    
+}
